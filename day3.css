@@ -1,0 +1,232 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+/* header part starts */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/imagr/me.jpg);
+    background-size: 650px;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+.container{
+    padding: 1.7% 10%;
+}
+.container .h1{
+    font-size: 3rem;
+}
+.container .h1 span{
+    color: #ff004f;
+}
+/* navigation bar manuplation starts here */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+/* this code id for making the hover line effect in our navigation bar */
+nav ul li a::after{
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s
+}
+/* nav ul li a:hover::after{
+    width: 100%;
+} */
+/* nav ul li a::after{
+    content: "";
+    background-color: #ff004f;
+    position: absolute;
+    height: 5px;
+    bottom: -10px;
+    left: 0;
+    transition: 0.5s;
+    position: relative;
+} */
+nav a:hover::after{
+    width: 100%;
+
+}
+/* navigation ends here  */
+/* header text starts here */
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+/* about starts */
+/* #about{
+    padding: 0 10px;
+    background-color: #1a1919;
+    
+    height: 100vh;
+}
+.title{
+    font-weight: 900;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col-1{
+    flex-basis: 30%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.col-2{
+    flex-basis: 60%;
+    border: 1px solid #ff004f;
+    padding: 0 90px;
+}
+.tab-title{
+    display: flex;
+    justify-content: space-between;
+}
+.tab-link{
+    color: #ff004f;
+    position: relative;
+
+}
+.tab-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.tab-link:hover::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style:  none; 
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:#b54769 ;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+} */
+/* .tab-contents.active-tab{
+    /* display: block; */
+/* } */ 
+
+
+
+.about{
+    height: 100vh;
+}
+.row{
+    
+    display: flex;
+    
+}
+
+.col-1{
+    flex-basis: 35%;
+}
+.col-2{
+    flex-basis: 60%;
+    padding: 0 10px;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+.text-contain{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 10px 0;
+    color: #ff004f;
+}
+  .text-contain .text::after{
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s
+    
+}
+ .text-contain .text:hover::after{
+    width: 90%;
+}
+.work{
+    height: 100vh;
+    background-color: aliceblue;
+}
+.box{
+    border: 1px solid red;
+    height: 120px ;
+    width: 200px;
+    background-color: burlywood;
+    transition: 0.5s;
+}
+.box:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+.row a{
+    
+    text-decoration: none;
+    color: red;
+}
+.btn{
+    border: 1px solid green;
+    width: 10%;
+    height: 30px;
+    padding: 10px;
+}
+.btn:hover{
+    background-color: #ff004f;
+    color: white;
+}
